@@ -4,11 +4,11 @@
         <h2 class="titulo">Crear producto </h2>
         <form v-on:submit.prevent="guardarProducto" class="diseñoFormulario">
             <ul class="ulEstilo">
-                <li class="liEstilo"><input type="text" v-model="product.codigo" placeholder="Codigo Producto"></li>
-                <li class="liEstilo"><input type="text" v-model="product.nombre" placeholder="Nombre Producto"></li>
-                <li class="liEstilo"><input type="text" v-model="product.cantidad_disponible" placeholder="Cantidad disponible"></li>
-                <li class="liEstilo"><input type="text" v-model="product.costo_adquisicion" placeholder="Costo de adquisicion"></li>
-                <li class="liEstilo"><input type="text" v-model="product.precio_venta" placeholder="Precio venta"></li>               
+                <li class="liEstilo"><input class="input" type="text" v-model="product.codigo" placeholder="Codigo Producto"></li>
+                <li class="liEstilo"><input class="input" type="text" v-model="product.nombre" placeholder="Nombre Producto"></li>
+                <li class="liEstilo"><input class="input" type="text" v-model="product.cantidad_disponible" placeholder="Cantidad disponible"></li>
+                <li class="liEstilo"><input class="input" type="text" v-model="product.costo_adquisicion" placeholder="Costo de adquisicion"></li>
+                <li class="liEstilo"><input class="input" type="text" v-model="product.precio_venta" placeholder="Precio venta"></li>               
                 <button type="submit" class="boton">CREAR PRODUCTO</button>
             </ul>
             
@@ -70,32 +70,37 @@ export default{
     margin-top: 20px;
     background: #ffff80;
     margin: 10px;
-    
+    align-items: center;
+    justify-content: center;
 
 
 }
 .titulo{
-    justify-content: center;
-    margin-left: 10%;
+    text-align: center;
 }
 .diseñoFormulario{
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    
+    margin: 0 auto;
+    text-align: center;
+      
+    padding: 10px;     
 
 }
 .ulstilo{
-    list-style: none;
-    align-items: center;
-    justify-content: center;
+    
+    text-align: center;
+    
 }
 .liEstilo{
     list-style: none;
-    margin: 0.5%;
-    padding: 2pt;
-    margin-right: 10%;
     
+    padding: 3pt;
+    margin-right: 15%;    
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    border-radius: 10px;
+    margin-right: 20px;
 }
 .contededorImg {
     width: 80%;
@@ -122,6 +127,7 @@ export default{
     text-shadow: 1px 1px 3px #666666;
     border: solid #2a5c28 2px;
     background: #2a5c28;
+        
 }
 
 </style>
