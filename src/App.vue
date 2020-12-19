@@ -76,7 +76,7 @@ export default {
 
 <style>
 #app{
-  background-image: linear-gradient(to bottom right, white 0%, rgb(183, 240, 50) 100%);
+  background-image: linear-gradient(to bottom right, white 0%, rgb(3, 175, 138) 100%);
 }
 
 .estiloBody{
@@ -109,7 +109,7 @@ export default {
 .boton{
   font-family: Arial;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 15pt;
     padding: 10px;
     text-decoration: none;
     -webkit-border-radius: 28px;
