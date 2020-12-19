@@ -7,7 +7,7 @@
           <div class="contenedorBotones">
             <button v-on:click="procesarInicio" class="boton" > Inicio</button>
             <button v-on:click="procesarCrearProducto" class="boton">Crear</button>
-            <button v-on:click="selectGet" class="boton">Consultar  </button>
+            <button v-on:click="selectGet" class="boton">Administrar  </button>
           </div>
         </nav>
       </div>
@@ -121,6 +121,9 @@ export default {
     text-shadow: 1px 1px 3px #666666;
     border: solid #2a5c28 2px;
     background: #2a5c28;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
   /*border-radius: 20px;
   padding: 5px 20px;
   margin:0px; */
