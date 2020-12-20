@@ -9,7 +9,7 @@
                 <li class="liEstilo"><input class="input" type="text" v-model="product.cantidad_disponible" placeholder="Cantidad disponible"></li>
                 <li class="liEstilo"><input class="input" type="text" v-model="product.costo_adquisicion" placeholder="Costo de adquisicion"></li>
                 <li class="liEstilo"><input class="input" type="text" v-model="product.precio_venta" placeholder="Precio venta"></li>               
-                <button type="submit" class="boton">CREAR PRODUCTO</button>
+                <button type="submit" class="botonCrear">Crear Producto</button>
             </ul>
             
             
@@ -17,7 +17,7 @@
         </div>
         
         <div>
-            <div class="contededorImg"> <img src="../assets/logo.png"></div>
+            <div class="contededorImg"> <img src="../assets/caja.png"></div>
 
         </div>
     </div>
@@ -57,6 +57,8 @@ export default{
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 #CreateProduct{
     display: flex;
     align-items: center;
@@ -77,6 +79,7 @@ export default{
 }
 .titulo{
     text-align: center;
+    font-family: 'Handlee', cursive;
 }
 .diseñoFormulario{
     margin: 0 auto;
@@ -100,7 +103,8 @@ export default{
 }
 .input{
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 30px;
+    text-align: center;
 }
 .contededorImg {
     width: 80%;
@@ -112,8 +116,8 @@ export default{
     border-radius: 5px;
     border: 1px solid #000000;
 } 
-.boton{
-    font-family: Arial;
+.botonCrear{
+    
     color: #ffffff;
     font-size: 15px;
     padding: 10px;
@@ -127,6 +131,9 @@ export default{
     text-shadow: 1px 1px 3px #666666;
     border: solid #2a5c28 2px;
     background: #2a5c28;
+    margin: 10px;
+    margin-right: 40px;
+    font-family: 'Roboto Mono', monospace;
         
 }
 
