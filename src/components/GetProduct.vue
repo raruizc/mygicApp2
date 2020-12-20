@@ -1,26 +1,26 @@
 <template>
     <div id= "obtenerProducto">
-        <h2 align="center">Consultar producto </h2>
+        <h2 align="center" class="tituloConsulta">Administrar productos </h2>
         <div class = "contenido">
             <div class="formularioGet">
                 <form v-on:submit.prevent="procesarConsulta" Class= "diseñoFormulario">
                     <ul>
                         <li class="liEstilo"><input class="estiloInput" type="text" v-model="codigoProducto" placeholder="Codigo Producto"></li>
-                        <button type="submit" class="boton">CONSULTAR </button>
+                        <button type="submit" class="boton">Consultar </button>
                     </ul>
                 </form>
             </div>
             <div class="informacion">
                              
-                <h2>Información</h2>
+                <h2 class="textoInformacion">Información</h2>
                 
-                <p v-if="hay_datos"><span>Código: </span> <input type="text"  v-model="product.codigo" readonly> </p>                
-                <p v-if="hay_datos"><span>Nombre: </span> <input type="text"  id="campo1" v-model="product.nombre"  > </p>
-                <p v-if="hay_datos"><span>Cantidad Disponible: </span><input type="text"  id="campo2" v-model="product.cantidad_disponible" > </p>
-                <p v-if="hay_datos"><span>Costo Adquisición: </span> <input type="text"  id="campo3" v-model="product.costo_adquisicion" > </p>
-                <p v-if="hay_datos"><span>Precio Venta: </span> <input type="text" id="campo4" v-model="product.precio_venta"  > </p>
-                <button v-on:click="editarProducto" v-if="hay_datos" class="boton">Modificar</button>
-                <button v-on:click="borrarProducto" v-if="hay_datos" class="boton">Eliminar</button> 
+                <p v-if="hay_datos" class="item"><span>Código: </span> <input class="input" type="text"  v-model="product.codigo" readonly> </p>                
+                <p v-if="hay_datos" class="item"><span>Nombre: </span> <input class="input" type="text"  id="campo1" v-model="product.nombre"  > </p>
+                <p v-if="hay_datos" class="item"><span>Cantidad Disponible: </span><input class="input" type="text"  id="campo2" v-model="product.cantidad_disponible" > </p>
+                <p v-if="hay_datos" class="item"><span>Costo Adquisición: </span> <input class="input" type="text"  id="campo3" v-model="product.costo_adquisicion" > </p>
+                <p v-if="hay_datos" class="item"><span>Precio Venta: </span> <input class="input" type="text" id="campo4" v-model="product.precio_venta"  > </p>
+                <button v-on:click="editarProducto" v-if="hay_datos" class="botonAdministrar">Modificar</button>
+                <button v-on:click="borrarProducto" v-if="hay_datos" class="botonAdministrar">Eliminar</button> 
                 
             </div>
             
@@ -65,7 +65,7 @@ export default {
                 })
                 .catch((error)=>{
                     self.hay_datos = false
-                    alert("ERROR: " + error)
+                    alert("ERROR: No se encuentra el producto")
                 })
         },
         editarProducto:function(){
@@ -108,8 +108,12 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 .formularioGet{
     border-radius: 10px;
+}
+.tituloConsulta{
+    font-family: 'Handlee', cursive;
 }
 .contenido{
     display: flex;
@@ -118,20 +122,48 @@ export default {
 .liEstilo{
     list-style: none;
 }
+.textoInformacion{
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
 .informacion{
     border: 1px solid #000000;
     align-items: center;
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
+    text-align: ce;
 }
 .estiloInput{
     border-radius: 10px;
     margin-right: 20px;
     margin: 10px;
+    text-align: center;
 }
 .botonConsultar{
     border-radius: 10px;
     margin-right: 20px;
+}
+.item{
+    font-family: 'Handlee', cursive;
+}
+.botonAdministrar{
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    text-shadow: 1px 1px 3px #666666;
+    border: solid #2a5c28 2px;
+    background: #2a5c28;
+    margin: 10px;
+    margin-right: 0px;
+    margin-left: 40px;
+    font-family: 'Roboto Mono', monospace;
 }
 </style>
