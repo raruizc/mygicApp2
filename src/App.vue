@@ -16,7 +16,7 @@
       </div>
 
       <div class="footer">
-        <p>Desarrollado por G2M3Grupo3</p>
+        <p class="textoFooter">Desarrollado por G2M3Grupo3</p>
 
       </div>
     
@@ -75,6 +75,11 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 #app{
   background-image: linear-gradient(to bottom right, white 0%, rgb(3, 175, 138) 100%);
 }
@@ -99,17 +104,19 @@ export default {
   align-items: center; 
 }
 .nombreApp{
-  margin-left: 60px;
-  font-size: 40pt; 
-  font-family: 'Langar', cursive;
+  margin-left: 10%;
+  font-size: 50pt; 
+  /*font-family: 'Bungee', cursive;*/
+  /*font-family: 'Source Serif Pro', serif;*/
+  font-family: 'Handlee', cursive;
 }
 .contenedorBotones{
-  margin-left: 50%;
+  margin-left: 35%;
 }
 .boton{
-  font-family: Arial;
+  font-family: 'Roboto Mono', monospace;
     color: #ffffff;
-    font-size: 15pt;
+    font-size: 11pt;
     padding: 10px;
     text-decoration: none;
     -webkit-border-radius: 28px;
@@ -164,6 +171,10 @@ export default {
     min-height: 100px;
     background-color: #283747;
     color: #E5E7E9;*/
+}
+.textoFooter{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10pt;
 }
 
 </style>
