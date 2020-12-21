@@ -3,7 +3,8 @@
         <div class="contededorImg"> <img src="../assets/producto2.png"></div>
         <div class="contenedorTexto">
             <p class='parrafo'>
-                Módulo donde se podrá crear, consultar y modificar los productos de una organizaciónes
+                Aquí podrá administrar los productos de su empresa. No pierda el control de su inventario.
+                ¡Bienvenido a MyGIC!
             </p>                
         </div>       
     </div>
