@@ -9,7 +9,7 @@
                 <li class="liEstilo"><input class="input" type="text" v-model="product.cantidad_disponible" placeholder="Cantidad disponible"></li>
                 <li class="liEstilo"><input class="input" type="text" v-model="product.costo_adquisicion" placeholder="Costo de adquisicion"></li>
                 <li class="liEstilo"><input class="input" type="text" v-model="product.precio_venta" placeholder="Precio venta"></li>               
-                <button type="submit" class="botonCrear">Crear Producto</button>
+                <button type="submit" class="botonCrear">Crear</button>
             </ul>
             
             
