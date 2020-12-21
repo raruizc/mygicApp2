@@ -17,8 +17,8 @@
                 <p v-if="hay_datos" class="item"><span>Código: </span> <input class="input" type="text"  v-model="product.codigo" readonly> </p>                
                 <p v-if="hay_datos" class="item"><span>Nombre: </span> <input class="input" type="text"  id="campo1" v-model="product.nombre"  > </p>
                 <p v-if="hay_datos" class="item"><span>Cantidad Disponible: </span><input class="input" type="text"  id="campo2" v-model="product.cantidad_disponible" > </p>
-                <p v-if="hay_datos" class="item"><span>Costo Adquisición: </span> <input class="input" type="text"  id="campo3" v-model="product.costo_adquisicion" > </p>
-                <p v-if="hay_datos" class="item"><span>Precio Venta: </span> <input class="input" type="text" id="campo4" v-model="product.precio_venta"  > </p>
+                <p v-if="hay_datos" class="item"><span>Costo Adquisición: $</span> <input class="input" type="text"  id="campo3" v-model="product.costo_adquisicion" > </p>
+                <p v-if="hay_datos" class="item"><span>Precio Venta: $</span> <input class="input" type="text" id="campo4" v-model="product.precio_venta"  > </p>
                 <button v-on:click="editarProducto" v-if="hay_datos" class="botonAdministrar">Modificar</button>
                 <button v-on:click="borrarProducto" v-if="hay_datos" class="botonAdministrar">Eliminar</button> 
                 
